@@ -1,0 +1,189 @@
+/* --- Custom css style for admin panel 
+------ All rights reserved ------------
+----- Daniel Śmigiela IT-Solutions-----
+**************************************/
+.content-area{
+    background-color: lightgray;
+    position: absolute;
+    height: 94vh;
+    overflow-y: auto;
+    overflow-x: auto;
+    top: 3rem;
+    left: 200px;
+    right: 0;
+
+  }
+  .backend-content{
+    margin: 10px 25px;
+    padding-top: 30px;
+    z-index: 0; 
+  } 
+.user-info{
+    color: $mint;
+    line-height: 0.6;
+    margin-right: 100px;
+    position: relative;
+    .badge{
+        position: relative; 
+        top: -55px;
+        left: -15px;            
+    }        
+    .user-name{
+        font-style: italic;
+    }
+    .user-role{
+        font-style: bold;
+        color: gray;
+    }
+    ul.user-menu{
+        display: none;
+        background-color: snow;
+        border-radius: 10px;
+        position: absolute;
+        left: 40px;
+        top: 60px;
+        list-style-type: none;
+        padding-left: 0;
+        padding-right: 0;
+        & li{
+            margin-right: 10px !important;
+            padding: 8px;
+            &:first-child{
+                padding-top: 10px; 
+            }
+        } 
+        .user-menu-item{
+            & a{
+                color: black;                
+            }
+            & a:hover{
+                text-decoration: none;
+                color: $mint;
+            }
+        }
+    }    
+}
+.larva-links a{
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.post-text-asside{
+    color: #636b6f;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.user-img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 3px $mint solid;
+}
+#asside-admin-panel{
+    height: 91vh;
+    width: 200px;
+    padding-top: 50px;
+    z-index: 15;
+     -moz-box-shadow: 0px -1px 5px #000000;
+    -webkit-box-shadow: 0px -1px 5px #000000;
+    box-shadow: 0px -1px 5px #000000;
+
+    .menu{
+        list-style-type: none;
+        margin-left: 10px;
+        padding-top: 0;
+        padding-left: 0;
+        padding-right: 5px;
+        font-size: 1.1rem;
+        li{
+            padding: 5px;
+            border-radius: 5%;
+        }
+        li:hover{
+            background-color: #FFFAFA;
+        }
+        .active{
+            background-color: $mint;
+        }
+        & a{
+            text-decoration: none;
+            color: black;
+        }
+        & a:hover{
+            color: $mint;
+        }
+        .submenu-list{
+            margin-left: 5px;   
+            padding-top: 5px;
+            padding-left: 12px;     
+            list-style-type: none; 
+            display: none; 
+            border-left: 1px $mint solid;
+            .submenu-item{
+                margin-top: 0px;
+            }              
+        }    
+        .asside-menu-item{
+            margin-top:20px;
+        }
+    }
+}
+
+.col-centered{
+    text-align: center;
+    float: none;
+    margin: 0 auto;
+}
+
+.card-statistic{
+    padding: 10px;
+    text-align: center;
+    &:hover{
+        color: $mint;
+    }
+}
+.card-form{
+    padding: 10px;
+}
+.card-user{    
+    img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    label{
+        font-style: italic;
+        font-style: bold;
+    }
+}
+.footer{
+    background-color: snow;
+   
+    padding: 10px;
+    bottom: 0;
+    p{
+        text-align: center;
+        color: #636b6f;
+    }
+}
+/* login / register page */
+.login-container{
+    margin-top: 215px;
+    img{
+        float: none;
+        margin: auto;
+    }
+}
+/* post show */
+.post-action{
+    padding: 10px 20px;
+}

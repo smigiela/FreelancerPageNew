@@ -1,0 +1,37 @@
+/* navbar overrides */
+.navbar-admin{
+    background-color: $mint;
+    -moz-box-shadow: 202px 0px 4px #000000;
+    -webkit-box-shadow: 202px 0px 4px #000000;
+    box-shadow: 202px 0px 4px #000000;
+    z-index: 10;
+    .navbar-brand img{
+        height: 50px;
+    }
+    #navbar{
+        margin-left: 100px;
+        ul > li{
+            margin-right: 50px;
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/* card overrides */
+.card{
+   -moz-box-shadow: 1px 1px 5px #000000;
+    -webkit-box-shadow: 1px 1px 5px #000000;
+    box-shadow: 1px 1px 5px #000000;
+}
+/* table overrides */
+table{
+    overflow: hidden;
+    a{
+        color: #636b6f;
+        &:hover{
+            color: $mint;
+        }
+    }
+}

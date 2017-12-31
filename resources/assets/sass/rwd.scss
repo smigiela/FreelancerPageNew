@@ -1,0 +1,61 @@
+@media screen and (max-width: 360px) {
+    body{
+      font-size: 0.7rem;
+    }
+    #about, #call2action, #offer{
+      font-size: 0.7rem;
+      text-align: center;
+      padding: 0 10px;
+    }
+    #slider{
+      height: 180px;
+    }
+}
+@media screen and (max-width: 640px) {
+    body{
+      font-size: 0.9rem;
+    }
+      #about, #call2action, #offer{
+        padding: 0 15px;
+      }
+    #slider, #video-container{
+      height: 220px;
+      margin-bottom: 5px;
+        #intro-hero {
+          margin-top: 10px;
+          h3{
+          font-size: 0.6rem;
+        }
+          h1{
+            font-size: 1rem;
+          }
+      }
+      .intro-icons{
+        display: none;
+      }
+    }
+    #about, #offer {
+      text-align: center;
+    }
+    footer{
+      text-align: center;
+    }
+    .portfolio-item-home{
+      height: 180px;
+      width: 345px;
+    }
+
+}
+
+@media screen and (max-width: 1370px) {
+  #slider{
+    height: 770px;
+      .intro-icons{
+        font-size: 1.5rem;
+    }
+  }
+  .portfolio-item-home{
+    height: 200px;
+    height: 368px;
+  }
+}
