@@ -7,7 +7,7 @@
       <div class="card is-4">
         <div class="card-image">
           <figure class="image is-16by9">
-            <img src="{{asset('/img/portfolio/' . $portfolio->image)}}">
+            <img src="{{asset('/img/portfolio/' . $portfolio->image)}}" alt="{{$portfolio->alt_tag}}">
           </figure>
         </div>
         <div class="card-content">

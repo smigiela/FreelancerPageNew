@@ -10,7 +10,7 @@
     <div class="columns">
       <div class="column blog-post-content is-10"><!--content of post -->
 
-        <img class="blog-post-image" src="{{asset('/img/blog/' . $post->image)}}"><!--post photo-->
+        <img class="blog-post-image" src="{{asset('/img/blog/' . $post->image)}}" alt="{{$post->alt_tag}}"><!--post photo-->
 
         <h2 class="title blog-post-title">{{$post->title}}</h2><!--post title-->
         <div class="blog-post-footer">

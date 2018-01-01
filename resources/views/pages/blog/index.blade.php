@@ -19,7 +19,7 @@
         @foreach($posts as $post)
             <div class="card blog-item m-t-20">
               <div class="card-image">
-                <img class="is-2by1" src="{{asset('/img/blog/' . $post->image)}}" height="240px">
+                <img class="is-2by1" src="{{asset('/img/blog/' . $post->image)}}" alt="{{$post->alt_tag}}">
               </div>
               <div class="card-content">
                 <h2 class="card-header-title larva-links">

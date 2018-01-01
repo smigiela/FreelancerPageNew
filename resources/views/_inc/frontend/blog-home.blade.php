@@ -10,7 +10,7 @@
          <div class="card">
           <div class="card-image">
             <figure class="image is-16by9">
-              <img src="{{asset('/img/blog/' . $post->image)}}">
+              <img src="{{asset('/img/blog/' . $post->image)}}" alt="{{$post->alt_tag}}">
             </figure>
           </div>
           <div class="card-content">
