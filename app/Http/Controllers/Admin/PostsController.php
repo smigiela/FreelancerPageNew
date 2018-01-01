@@ -65,7 +65,8 @@ class PostsController extends Controller
                 $post->subtitle = $request->subtitle;
                 $post->keywords = $request->keywords;
                 $post->meta_content = $request->meta_content;
-                $post->status = $request->status;        
+                $post->status = $request->status;    
+                $post->alt_tag = $request->alt_tag;    
         
                 if($request->hasFile('post_image')){
                     $image = $request->file('post_image');
@@ -147,6 +148,7 @@ class PostsController extends Controller
         $post->keywords = $request->keywords;
         $post->meta_content = $request->meta_content;
         $post->status = $request->status;
+        $post->alt_tag = $request->alt_tag;  
         
         if($request->hasFile('post_image')){
             //add the new photo

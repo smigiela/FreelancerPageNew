@@ -15,22 +15,23 @@
    </div><!--end of hero section-->
    <div class="container m-t-20">
     <div class="columns">
-       <div class="column is-8 is-offset-1"><!--blog content-->
+       <div class="column is-6 is-offset-2"><!--blog content-->
         @foreach($posts as $post)
-            <div class="card blog-item m-t-10">
+            <div class="card blog-item m-t-20">
               <div class="card-image">
                 <img class="is-2by1" src="{{asset('/img/blog/' . $post->image)}}" height="240px">
               </div>
               <div class="card-content">
-                <h2 class="card-header-title">
+                <h2 class="card-header-title larva-links">
                   <a href="{{url('blog/post/' . $post->slug)}}">
                   {{$post->title}}
                 </a>
                 </h2>
                 <p>{!!str_limit(strip_tags($post->body), $limit=80)!!}</p>
-                <small class="card-footer is-size-7">
-                  Dodano: {{$post->created_at}}
-                  Kategoria: {{$post->Category->name}}<br>Tagi: 
+                <small class="is-size-7">
+                  Dodano: {{date('d-m-Y', strtotime($post->created_at))}}
+                  Kategoria: {{$post->Category->name}}<br>
+                  Tagi: 
                   @foreach($post->Tag as $tag)
                     <span class="tag">{{$tag->name}}</span>
                   @endforeach
@@ -39,11 +40,9 @@
             </div>
             
       @endforeach 
-      <div class="columns"><!--pagination-->
-          <div class="column is-4 is-offset-3 paginate">
+     
             {{ $posts->links("pagination::bootstrap-4") }}
-          </div>
-          </div>
+          
     </div>
        <div class="column asside-blog is-2 is-offset-1"><!--asside panel-->
         <div class="card card-asside larva-links">   

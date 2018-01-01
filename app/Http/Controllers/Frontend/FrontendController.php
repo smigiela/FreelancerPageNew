@@ -17,7 +17,7 @@ class FrontendController extends Controller
 
     public function index()
     {
-        $posts = Post::where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->paginate(3);
+        $posts = Post::where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->paginate(4);
         $categories = Category::all();
         $portfolios = Portfolio::paginate(4);
         $tags = Tag::all();

@@ -3,7 +3,7 @@
     <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="{{route('frontend.index')}}">
-        <img src="/img/logo-new.png" alt="it-solutions">
+        <img src="/img/settings/logo.png" alt="it-solutions">
       </a>
       <div id="menu-button" class="navbar-burger burger" data-target="navbar" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>

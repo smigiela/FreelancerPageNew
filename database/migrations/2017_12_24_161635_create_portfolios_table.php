@@ -19,6 +19,7 @@ class CreatePortfoliosTable extends Migration
             $table->string('slug');
             $table->string('link');
             $table->string('image');
+            $table->string('alt_tag');
             $table->text('body');
             $table->string('meta_content')
                 ->nullable();

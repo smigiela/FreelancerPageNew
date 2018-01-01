@@ -16,7 +16,10 @@ Auth::routes();
 Route::group([
   'prefix' => 'admin', 
   'middleware' => ['web']], function () {   
-      Route::get('/', 'Admin\BackendController@index');   
+      Route::get('/', [
+        'uses' => 'Admin\BackendController@index',
+        'as' => 'backend.index'
+      ]);   
       Route::resource('/tags', 'Admin\TagsController');
       Route::resource('/categories', 'Admin\CategoriesController');
       Route::resource('/posts', 'Admin\PostsController');

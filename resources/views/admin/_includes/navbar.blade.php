@@ -1,6 +1,6 @@
 <nav class="navbar navbar-admin navbar-expand-lg navbar-light bg-light">
-		<a class="navbar-brand" href="#">
-			<img src="/img/cms.png" alt="">
+		<a class="navbar-brand" href="{{route('frontend.index')}}">
+			<img src="/img/settings/cms.png" alt="">
 		</a>
 	
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -11,7 +11,7 @@
 			<ul class="navbar-nav mr-auto">
 				
 				<li class="nav-item">
-					<a class="nav-link" href="#">Frontend</a>
+					<a class="nav-link" href="{{route('frontend.index')}}">Frontend</a>
 				</li>
 			</ul>
 			<div class="user-info row">
@@ -30,7 +30,7 @@
 							<li class="is-active user-menu-item">
 									<a href="#"><i class="fa fa-user-o " aria-hidden="true"></i> Profil</a></li>
 							<li class="is-active user-menu-item">
-									<a href="#"><i class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a></li>
+									<a href="{{route('backend.index')}}"><i class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a></li>
 							<li class="is-active user-menu-item">
 									<a href="#"><i class="fa fa-bell" aria-hidden="true"></i> Powiadomienia</a></li>
 							<li class="is-active user-menu-item">

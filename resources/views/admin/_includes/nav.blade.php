@@ -1,5 +1,5 @@
 <nav class="navbar navbar-admin navbar-expand-lg navbar-light bg-light" style="box-shadow: 0px 0px 4px #000000;">
-		<a class="navbar-brand" href="#">
+		<a class="navbar-brand" href="{{route('frontend.index')}}">
 			<!--brand section-->
 		</a>
 	
@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navbar">
 			<ul class="navbar-nav mr-auto">				
 				<li class="nav-item">
-					<a class="nav-link" href="#">Frontend</a>
+					<a class="nav-link" href="{{route('frontend.index')}}">Frontend</a>
 				</li>
             </ul>
             

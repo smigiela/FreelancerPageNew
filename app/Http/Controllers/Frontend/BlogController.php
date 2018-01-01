@@ -16,7 +16,7 @@ class BlogController extends Controller
 {
     public function index()
     {
-        $posts = Post::paginate(6);
+        $posts = Post::where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->paginate(6);
         $categories = Category::all();
         $tags = Tag::all();
         return view('pages.blog.index', compact(
@@ -56,7 +56,7 @@ class BlogController extends Controller
     
     public function show($slug)
     {
-        $post = Post::where('slug', '=', $slug)->first();
+        $post = Post::where('status', 'published', ['slug', '=', $slug])->first();
         $categories = Category::all();
         $tags = Tag::all();
         return view('pages.blog.show', compact(

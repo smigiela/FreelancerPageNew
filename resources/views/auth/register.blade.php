@@ -4,7 +4,7 @@
 <div class="container login-container">
         <div class="row">
                 <div class="col-md-6 col-centered">
-                    <img src="/img/cms.png" height="94px" alt="">
+                    <img src="/img/settings/cms.png" height="94px" alt="">
                     
                     <div class="card m-t-30 m-b-30 p-t-30 p-l-45 p-r-45" style="text-align: left">
                             <form class="form-horizontal" method="POST" action="{{ route('register') }}">

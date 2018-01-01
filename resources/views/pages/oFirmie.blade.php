@@ -29,13 +29,13 @@
        </div>
      </div>
        <div class="column is-4">
-         <img src="/img/smigiela.JPG" width="250" height="650" alt="">
+         <img src="/img/users/smigiela.JPG" width="250" height="650" alt="">
       </div>
     </div><!--end columns-->
     <hr>
     <div class="columns">
       <div class="column is-4">
-        <img src="/img/logo-new.png" alt="">
+        <img src="/img/settings/logo.png" alt="">
       </div>
       <div class="column is-8">
         <div class="subpage-text">

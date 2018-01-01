@@ -57,6 +57,8 @@
                         <div class="form-group">
                             <label for="post_image">Zdjęcie wyróżniające:</label><br>
                             <input id="post_image" name="post_image" type="file" class="file form-control">
+                            {!! Form::label('alt_tag', 'seotag:') !!}
+                            {!! Form::text('alt_tag', null, array('class' => 'form-control')) !!}
                         </div>  
                         {!! Form::submit('Dodaj', array('class' => 'btn btn-lg btn-success m-t-10', 'style' => 'width:100%')) !!}
                         {!! Form::close() !!} 

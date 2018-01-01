@@ -54,6 +54,7 @@ class PortfoliosController extends Controller
         $portfolio->meta_content = $request->meta_content;
         $portfolio->keywords = $request->keywords;
         $portfolio->slug = $request->slug;
+        $portfolio->alt_tag = $request->alt_tag;
 
         if($request->hasFile('image')){
             $image = $request->file('image');
@@ -119,6 +120,7 @@ class PortfoliosController extends Controller
         $portfolio->meta_content = $request->meta_content;
         $portfolio->keywords = $request->keywords;
         $portfolio->slug = $request->slug;
+        $portfolio->alt_tag = $request->alt_tag;
 
         if($request->hasFile('image')){
             //add the new photo

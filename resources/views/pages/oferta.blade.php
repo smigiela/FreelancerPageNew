@@ -15,7 +15,7 @@
    <div class="container m-t-20">
      <div class="columns">
        <div class="column is-4">
-         <img src="/img/rwd1.png" alt="rwd">
+         <img src="/img/icons/rwd1.png" alt="rwd">
        </div>
        <div class="column is-8">
          <div class="subpage-text">
@@ -35,13 +35,13 @@
         </div>
        </div>
        <div class="column is-4">
-         <img src="/img/seo1.png" alt="">
+         <img src="/img/icons/seo1.png" alt="">
        </div>
      </div><!--end of columns-->
      <hr>
      <div class="columns">
        <div class="column is-4">
-         <img src="/img/domena.png" alt="">
+         <img src="/img/icons/domena.png" alt="">
        </div>
      <div class="column is-8">
        <div class="subpage-text">
@@ -62,7 +62,7 @@
        </div>
      </div>
      <div class="column is-4">
-       <img src="/img/hosting.png" alt="">
+       <img src="/img/icons/hosting.png" alt="">
      </div>
    </div><!--end of columns-->
  </div><!--end of container-->
@@ -84,7 +84,7 @@
       </div>
     </div>
     <div class="column is-4">
-      <img src="/img/finger.png" alt="">
+      <img src="/img/icons/finger.png" alt="">
     </div>
   </div>
  </div>

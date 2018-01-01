@@ -31,7 +31,8 @@
                     <div class="form-group">
                         <label for="image">Zdjęcie wyróżniające:</label><br>
                         {!! Form::file('image', ['class' => 'form-control file']) !!}
-                        {{--  <input id="image" name="image" type="file" class="file">  --}}
+                        {!! Form::label('alt_tag', 'seotag:') !!}
+                        {!! Form::text('alt_tag', null, array('class' => 'form-control')) !!}
                     </div> 
                     {!! Form::close() !!} 
                     {!! Form::submit('Dodaj', ['class' => 'btn btn-lg btn-success', 'style' => 'width: 100%;']) !!}

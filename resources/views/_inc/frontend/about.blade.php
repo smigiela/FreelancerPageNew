@@ -1,7 +1,7 @@
 <div class="container">
   <div class="columns">
       <div class="column is-3 has-text-centered">
-          <img class="wow slideInLeft" src="img/logo-new.png" alt="itsolutions" data-wow-duration="1s">
+          <img class="wow slideInLeft" src="/img/settings/logo.png" alt="itsolutions" data-wow-duration="1s">
       </div>
       <div class="is-8 m-t-20 m-l-20 wow fadeIn" data-wow-duration="2s">
           <h2 class="title">Jednoosobowa marka</h2>
@@ -18,7 +18,7 @@ Kolejny etap rozwijania swojej pasji to założenie agencji interaktywnej ON-MED
 Obecnie prezentuję Ci swoje umiejętności jako freelancer.</p>
     </div>
     <div class="column is-3 has-text-centered">
-      <img class="wow slideInRight" src="img/smigiela.JPG" alt="smigiela" width="200px" height="600px" data-wow-duration="1s">
+      <img class="wow slideInRight" src="/img/users/smigiela.JPG" alt="smigiela" width="200px" height="600px" data-wow-duration="1s">
     </div>
   </div>
   <div class="has-text-centered">

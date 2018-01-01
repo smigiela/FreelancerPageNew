@@ -6,7 +6,7 @@
    <div class="column is-10 blog-home-content">
      <div class="columns"><!--start blog row-->
       @foreach($posts as $post)
-       <div class="column">
+       <div class="column is-3">
          <div class="card">
           <div class="card-image">
             <figure class="image is-16by9">
@@ -22,7 +22,7 @@
               <hr>
               <small class="is-size-7">
                 Opublikowano:
-                <time datetime="2016-1-1">{{$post->created_at}}</time><br>
+                {{date('d-m-Y', strtotime($post->created_at))}}<br>
                 Kategoria: {{$post->Category->name}}<br>
                 Tagi: 
                 @foreach($post->Tag as $tag)

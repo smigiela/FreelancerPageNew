@@ -85,7 +85,8 @@
           <!--scripts include-->
             <script src="{{ asset('js/frontend.js') }}"></script>
             <script src="{{ asset('js/wow.js') }}"></script>
-            <script src="{{ asset('js/facebook.js') }}"></script>
+            <script src="{{ asset('js/analytics/facebook.js') }}"></script>
+            <script src="{{ asset('js/analytics/google-analytics.js') }}"></script>
             <script>
               new WOW().init();
             </script>

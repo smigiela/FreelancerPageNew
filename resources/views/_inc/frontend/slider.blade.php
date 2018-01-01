@@ -1,7 +1,7 @@
 <div id="slider" class="header-unit wow fadeIn" data-wow-duratoion="1s">
   <div id="video-container" class="hvr-trim">
       <video autoplay loop class="fillWidth">
-          <source src="img/video-bg.mp4" type="video/mp4"/>
+          <source src="/img/background/video-bg.mp4" type="video/mp4"/>
           Your browser does not support the video tag. I suggest you upgrade your browser.
       </video>
         @include('_inc.frontend.nav')
