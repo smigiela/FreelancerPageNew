@@ -56,7 +56,7 @@ class BlogController extends Controller
     
     public function show($slug)
     {
-        $post = Post::where('status', 'published', ['slug', '=', $slug])->first();
+        $post = Post::where('status', 'PUBLISHED', ['slug', '=', $slug])->first();
         $categories = Category::all();
         $tags = Tag::all();
         return view('pages.blog.show', compact(

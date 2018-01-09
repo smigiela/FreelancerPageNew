@@ -9,7 +9,7 @@
                         {!! Form::open(['route' => 'tags.store', 'method' => 'POST']) !!}
                             {!! Form::label('name', 'Nazwa:') !!}
                             {!! Form::text('name', null, ['class' => 'form-control']) !!}                 
-                            {!! Form::submit('Dodaj', null, ['class' => 'btn btn-success m-t-10']) !!}                 
+                            <button class="btn btn-success m-t-10">Dodaj</button>                
                         {!! Form::close() !!} 
                     </div>
                 </div>    

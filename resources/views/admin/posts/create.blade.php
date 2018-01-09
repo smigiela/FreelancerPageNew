@@ -49,9 +49,9 @@
                         <div class="form-group">
                             <label for="tags">Status:</label>
                             <select name="status" id="status" class="form-control">
-                                <option value="draft">Szkic</option>
-                                <option value="published">Opublikowano</option>
-                                <option value="pending">Oczekuje</option>
+                                <option value="DRAFT">Szkic</option>
+                                <option value="PUBLISHED">Opublikowano</option>
+                                <option value="PENDING">Oczekuje</option>
                             </select>    
                         </div>
                         <div class="form-group">

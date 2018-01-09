@@ -8,8 +8,16 @@
                     {!! Form::model($category, ['route' => ['categories.update', $category->id], 'method' => 'PUT']) !!}
                         {!! Form::label('name', 'Nazwa', ['class' => ' m-t-10']) !!}
                         {!! Form::text('name', null, ['class' => 'form-control']) !!}
+                        
+                        {!! Form::label('keywords', 'Słowa kluczowe:') !!}
+                        {!! Form::text('keywords', null, ['class' => 'form-control']) !!}
+    
+                        {!! Form::label('meta_content', 'Meta opis:') !!}
+                        {!! Form::textarea('meta_content', null, ['class' => 'form-control', 'rows' => 3]) !!} 
+
                         {!! Form::label('description', 'Opis', ['class' => ' m-t-10']) !!}
                         {!! Form::textarea('description', null, ['class' => 'textarea form-control', 'rows' => '3']) !!}
+                        
                         {!! Form::submit('Zapisz', ['class' => 'btn btn-success btn-outlined m-t-10']) !!}
                     {!! Form::close() !!}
                 </div>

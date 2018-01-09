@@ -9,6 +9,12 @@
                     {!! Form::open(['route' => 'categories.store', 'method' => 'POST']) !!}
                     {!! Form::label('name', 'Nazwa:') !!}
                     {!! Form::text('name', null, ['class' => 'form-control']) !!}
+
+                    {!! Form::label('keywords', 'Sowa kluczowe:') !!}
+                    {!! Form::text('keywords', null, ['class' => 'form-control']) !!}
+
+                    {!! Form::label('meta_content', 'Meta opis:') !!}
+                    {!! Form::textarea('meta_content', null, ['class' => 'form-control', 'rows' => 3]) !!} 
     
                     {!! Form::label('description', 'Opis:') !!}
                     {!! Form::textarea('description', null, ['class' => 'form-control', 'rows' => 3]) !!} 
@@ -39,10 +45,10 @@
                             <td>{{$category->description}}</td>
                             <td>{{$category->Post()->count()}}</td>
                             <td><div class="row">
-                                <div class="col-sm-2">
+                                <div class="col-sm-6">
                                     <a href="{{route('categories.edit', $category->id)}}" class="btn btn-sm btn-info">Edytuj</a>
                                 </div>
-                                <div class="col-sm-2">
+                                <div class="col-sm-6">
                                     {!! Form::open(['route' => ['categories.destroy', $category->id], 'method' => 'DELETE']) !!} 
                                         <button class="btn btn-sm btn-danger">Usuń</button>                       
                                     {!! Form::close() !!}

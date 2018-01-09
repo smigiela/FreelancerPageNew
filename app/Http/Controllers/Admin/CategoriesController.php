@@ -45,7 +45,9 @@ class CategoriesController extends Controller
 
         $category->name = $request->name;
         $category->description = $request->description;
-        
+        $category->meta_content = $request->meta_content;
+        $category->keywords = $request->keywords;
+
         $category->save();
 
         Session::flash('success', 'Dodano kategorię pomyślnie');
@@ -97,7 +99,9 @@ class CategoriesController extends Controller
 
         $category->name = $request->name;
         $category->description = $request->description;
-        
+        $category->meta_content = $request->meta_content;
+        $category->keywords = $request->keywords;
+
         $category->save();
 
         Session::flash('success', 'Zaktualizowano kategorię pomyślnie');
