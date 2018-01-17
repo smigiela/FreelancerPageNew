@@ -2,6 +2,12 @@
 @section('title') | Dashboard @endsection
 @section('content')
     <div class="backend-content">
+            <div class="jumbotron" style="background-color:#17a2b8; color:white;">
+                    <h1 class="display-4">Witaj w systemie ITS CMS</h1>
+                    <p class="lead">System ten pozwoli Ci zarządzać treścią całej strony www. Możesz dodawać nowe posty, portfolia, zarządzać ustawieniami witryny, zarządzać użytkownikami.</p>
+                    <hr class="my-4">
+                    <p>Jeśli brakuje Ci jakiejś funkcjonalności - w zakładce 'pomoc' znajdziesz formularz kontaktowy.</p>
+                  </div>
         <div class="row">
             <div class="col-lg-2"><div class="card card-statistic">
                 <i class="fa fa-user fa-4x" aria-hidden="true"></i>

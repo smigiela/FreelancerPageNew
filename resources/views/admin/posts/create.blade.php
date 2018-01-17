@@ -2,8 +2,13 @@
 @section('title') | Dodaj post @endsection
 @section('content')
     <div class="backend-content">
+            <div class="row header">
+                    <div class="col-lg-6">
+                        <h2>Dodaj post</h2>
+                    </div>
+                </div>
+                <hr>
         <div class="card card-form">
-                <h2 class="card-header">Dodaj post na bloga</h2>
                 {!! Form::open(array('route' => 'posts.store', 'method' => 'POST', 'files' => true, 'enctype' => 'multipart/form-data')) !!}
                 {!! csrf_field() !!}
             <div class="row m-t-10">

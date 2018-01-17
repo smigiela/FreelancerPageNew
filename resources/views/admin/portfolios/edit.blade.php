@@ -2,8 +2,13 @@
 @section('title') | Portfolio - zarządzanie @endsection
 @section('content')
     <div class="backend-content">
+            <div class="row header">
+                    <div class="col-lg-6">
+                        <h2>Edytuj portfolio</h2>
+                    </div>
+                </div>
+                <hr>
         <div class="card card-form">
-                <h2 class="card-header">Edytuj portfolio <span style="font-style: italic">{{$portfolio->title}}</span></h2>
                 {!! Form::model($portfolio, ['route' => ['portfolios.update', $portfolio->id], 'method' => 'PUT', 'files' => true]) !!}
             <div class="row">
                 <div class="col-lg-8">

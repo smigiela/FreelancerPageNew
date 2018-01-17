@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Admin;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\User;
+use Auth;
+use Session;
 
 class UsersController extends Controller
 {
@@ -14,7 +17,8 @@ class UsersController extends Controller
      */
     public function index()
     {
-        //
+        $users = User::all();
+        return view('admin.users.index', compact('users'));
     }
 
     /**
@@ -24,7 +28,7 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.users.create');
     }
 
     /**
@@ -46,7 +50,8 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        //
+        $user = Auth::user();
+        return view('admin.users.show', compact('user'));
     }
 
     /**
@@ -57,7 +62,8 @@ class UsersController extends Controller
      */
     public function edit($id)
     {
-        //
+        $user = User::findOrFail($id);
+        return view('admin.users.edit', compact('user'));
     }
 
     /**
@@ -80,6 +86,10 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $user = User::findOrFail($id);
+        $user->delete();
+
+        Session::flash('success', 'Pomyślnie usunięto użytkownika');
+        return redirect()->route('users.index');
     }
 }

@@ -23,6 +23,9 @@
         <a class="navbar-item" href="{{route('frontend.oferta')}}">
           Oferta
         </a>
+        <a class="navbar-item" href="{{route('frontend.cms')}}">
+            ITS_CMS
+          </a>
         <a class="navbar-item" href="{{route('portfolio.index')}}">
           Portfolio
         </a>

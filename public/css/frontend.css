@@ -26615,7 +26615,7 @@ video.fillWidth {
   background-color: #EFEFEF;
 }
 
-#offer i {
+#offer .icons-ofer {
   background-color: #00d1b2;
   border-radius: 50%;
 }

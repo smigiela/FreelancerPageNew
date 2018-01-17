@@ -43,4 +43,8 @@ class FrontendController extends Controller
     {
         return view('pages.kontakt');
     }
+    public function cms()
+    {
+        return view('pages.cms');
+    }
 }

@@ -2,6 +2,12 @@
 		<a class="navbar-brand" href="{{route('frontend.index')}}">
 			<img src="/img/settings/cms.png" alt="">
 		</a>
+
+				
+		<div class="navbar-start" id="admin-slideout-button">
+				<span class="icon"><i class="fa fa-arrow-circle-o-right fa-2x"></i></span>
+			</div>
+			
 	
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
@@ -28,7 +34,7 @@
 					</div>	
 					<ul class="dropdown user-menu">
 							<li class="is-active user-menu-item">
-									<a href="#"><i class="fa fa-user-o " aria-hidden="true"></i> Profil</a></li>
+									<a href=""><i class="fa fa-user-o " aria-hidden="true"></i> Profil</a></li>
 							<li class="is-active user-menu-item">
 									<a href="{{route('backend.index')}}"><i class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a></li>
 							<li class="is-active user-menu-item">

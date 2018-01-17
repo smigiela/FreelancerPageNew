@@ -2,24 +2,24 @@
   <div class="columns m-t-30">
     <div class="column has-text-centered">
       <span class="wow fadeIn fa-stack fa-4x" data-wow-delay="1s" data-wow-duration="2s">
-        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-        <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-circle fa-stack-2x text-primary icons-ofer"></i>
+        <i class="fa fa-mobile fa-stack-1x fa-inverse icons-ofer"></i>
       </span>
         <h4 class="subtitle">Nowoczesny design</h4>
         <p class="text-muted">Strona dostoswana do wszystkich urządzeń! </p>
     </div>
     <div class="column has-text-centered">
       <span class="wow fadeIn fa-stack fa-4x" data-wow-delay="2s" data-wow-duration="2s">
-        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-        <i class="fa fa-user fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-circle fa-stack-2x text-primary icons-ofer"></i>
+        <i class="fa fa-user fa-stack-1x fa-inverse icons-ofer"></i>
       </span>
         <h4 class="wow fadeIn subtitle">User friendly</h4>
         <p class="text-muted">Rozwiązania nakierowane na użytkowników, aby wracali na Twoją stronę </p>
     </div>
     <div class="column has-text-centered">
       <span class="wow fadeIn fa-stack fa-4x" data-wow-delay="3s" data-wow-duration="2s" >
-        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-        <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse"></i>
+        <i class="fa fa-circle fa-stack-2x text-primary icons-ofer"></i>
+        <i class="fa fa-lightbulb-o fa-stack-1x fa-inverse icons-ofer"></i>
       </span>
         <h4 class="subtitle">Good ideas</h4>
         <p class="text-muted">Każdy Twój pomysł realizuję w oparciu o współczesne technologie. </p>

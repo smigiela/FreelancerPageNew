@@ -2,157 +2,57 @@
 @section('title') | Użytkownicy @endsection
 @section('content')
     <div class="backend-content">
-        <div class="row">
-            <div class="col-lg-3"><!--one user card-->
-                <div class="card card-user">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <img src="{{asset('/img/users/' . $user->image)}}" alt="">
-                            </div>
-                            <div class="col-sm-8">
-                                <span class="bagde badge-pill badge-secondary">Daniel Śmigiela</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->email}}</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->name}}</span><br>
-                                Role:<br> <span class="bagde badge-pill badge-danger">Administrator</span>
-                            </div>
-                        </div><!--end of row-->
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-info">Aktywność</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-success">Edytuj</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-danger">Usuń</button>
+            <div class="row header">
+                    <div class="col-lg-6">
+                        <h2>Zarządzanie użytkownikami</h2>
+                    </div>
+                    <div class="col-lg-6 text-right">
+                        <a href="{{route('users.create')}}" class="btn btn-lg btn-success"><i class="fa fa-plus"></i> Dodaj nowy</a>
+                    </div>
+                </div>
+                <hr>
+       
+                <div class="row">
+                        <div class="col-lg-12">
+                        <div class="card card-form">
+                            <h2 class="card-header">Użytkownicy:</h2>
+                            <div class="table-responsive">
+                                <table class="table categories">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nazwa</th>
+                                            <th>Email</th>
+                                            <th>Akcje</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        @foreach ($users as $user)                          
+                                        <tr>
+                                            <td>{{$user->id}}</td>
+                                            <td>{{$user->name}}</td>
+                                            <td>{{$user->email}}</td>
+                                            <td><div class="row">
+                                                <div class="col-sm-1">
+                                                    <a href="{{route('users.show', $user->id)}}" class="btn btn-sm btn-info"><i class="fa fa-eye"></i></a>
+                                                </div>
+                                                <div class="col-sm-1">
+                                                        <a href="{{route('users.edit', $user->id)}}" class="btn btn-sm btn-info"><i class="fa fa-pencil"></i></a>
+                                                    </div>
+                                                <div class="col-sm-1">
+                                                    {!! Form::open(['route' => ['users.destroy', $user->id], 'method' => 'DELETE']) !!} 
+                                                        <button class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></button>                       
+                                                    {!! Form::close() !!}
+                                                </div>
+                                            </div>
+                                           </td>
+                                        </tr>
+                                        @endforeach
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
-                 
-                </div>
-            </div><!--end of one user card-->
-            <div class="col-lg-3"><!--one user card-->
-                <div class="card card-user">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <img src="{{asset('/img/users/' . $user->image)}}" alt="">
-                            </div>
-                            <div class="col-sm-8">
-                                <span class="bagde badge-pill badge-secondary">Daniel Śmigiela</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->email}}</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->name}}</span><br>
-                                Role:<br> <span class="bagde badge-pill badge-danger">Administrator</span>
-                            </div>
-                        </div><!--end of row-->
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-info">Aktywność</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-success">Edytuj</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-danger">Usuń</button>
-                            </div>
-                        </div>
-                    </div>
-                 
-                </div>
-            </div><!--end of one user card-->
-            <div class="col-lg-3"><!--one user card-->
-                <div class="card card-user">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <img src="{{asset('/img/users/' . $user->image)}}" alt="">
-                            </div>
-                            <div class="col-sm-8">
-                                <span class="bagde badge-pill badge-secondary">Daniel Śmigiela</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->email}}</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->name}}</span><br>
-                                Role:<br> <span class="bagde badge-pill badge-danger">Administrator</span>
-                            </div>
-                        </div><!--end of row-->
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-info">Aktywność</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-success">Edytuj</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-danger">Usuń</button>
-                            </div>
-                        </div>
-                    </div>
-                 
-                </div>
-            </div><!--end of one user card-->
-            <div class="col-lg-3"><!--one user card-->
-                <div class="card card-user">
-                    <div class="card-header">
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <img src="{{asset('/img/users/' . $user->image)}}" alt="">
-                            </div>
-                            <div class="col-sm-8">
-                                <span class="bagde badge-pill badge-secondary">Daniel Śmigiela</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->email}}</span><br>
-                                <span class="bagde badge-pill badge-secondary">{{$user->name}}</span><br>
-                                Role:<br> <span class="bagde badge-pill badge-danger">Administrator</span>
-                            </div>
-                        </div><!--end of row-->
-                        <hr>
-                        <div class="row">
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-info">Aktywność</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-success">Edytuj</button>
-                            </div>
-                            <div class="col-sm-4">
-                                <button class="btn btn-sm btn-danger">Usuń</button>
-                            </div>
-                        </div>
-                    </div>
-                 
-                </div>
-            </div><!--end of one user card-->
-        </div><!--end of row-->
-        <hr>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card card-form">
-                        <h4 class="card-header">Dodaj użytkownika:</h4>
-                        <div class="row">
-                            <div class="col-sm-8">
-                                <div class="form-group input-group-sm">
-                                    <label for="name">Nazwa:</label>
-                                    <input type="text" class="form-control" id="name">
-                                    <label for="email">Email:</label>
-                                    <input type="text" class="form-control" id="email">
-                                    <button class="btn btn-success m-t-5">Dodaj</button>
-                                </div>
-                            </div>
-                            <div class="col-lg-4">
-                                <div class="form-group">
-                                    <label for="category">Rola:</label>
-                                    <select class="form-control" id="category">
-                                        <option>Administrator</option>
-                                        <option>Bloger</option>
-                                        <option>Programista</option>
-                                    </select>
-                                </div>
-                            </div>
-                        </div>
-                        
-                </div>
-            </div>
-        </div>
+                    </div><!--end of row-->
     </div>
 @endsection

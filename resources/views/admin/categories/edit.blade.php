@@ -2,6 +2,12 @@
 @section('title') | Kategoria - edycja @endsection
 @section('content')
     <div class="backend-content">
+            <div class="row header">
+                    <div class="col-lg-6">
+                        <h2> Edytuj kategorię</h2>
+                    </div>
+                </div>
+                <hr> 
         <div class="row">
             <div class="col-lg-4">
                 <div class="card card-form m-t-50">

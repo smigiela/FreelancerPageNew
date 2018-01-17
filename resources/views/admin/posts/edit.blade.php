@@ -2,8 +2,13 @@
 @section('title') | Edytuj post - $post->title @endsection
 @section('content')
     <div class="backend-content">
+            <div class="row header">
+                    <div class="col-lg-6">
+                        <h2>Edytuj post</h2>
+                    </div>
+                </div>
+                <hr>
         <div class="card card-form">
-                <h2 class="card-header">Edytuj post</h2>
                 {!! Form::model($post, ['route' => ['posts.update', $post->id], 'method' => 'PUT', 'files' => true]) !!}
     
             <div class="row m-t-10">

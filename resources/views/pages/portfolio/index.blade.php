@@ -22,7 +22,7 @@
           <div class="portfolio-item-home">             
              <figure>
                 <a href="{{url('portfolio/' . $portfolio->slug)}}">
-                    <img src="img/demo.png" alt="">
+                    <img src="{{asset('/img/portfolio/' . $portfolio->image)}}" alt="{{$portfolio->alt_tag}}">
                  </a>
            		<figcaption>
                  <a href="{{url('portfolio/' . $portfolio->slug)}}"><h3>{{$portfolio->title}}</h3></a>{!!str_limit(strip_tags($portfolio->body), $limit=80)!!}

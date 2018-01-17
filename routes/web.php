@@ -25,6 +25,8 @@ Route::group([
       Route::resource('/posts', 'Admin\PostsController');
       Route::resource('/portfolios', 'Admin\PortfoliosController');
       Route::resource('/comments', 'Admin\CommentsController');
+      Route::resource('/users', 'Admin\UsersController');
+
 });
 // widok strony głównej
 Route::get('/', [
@@ -76,4 +78,8 @@ Route::get('/oferta', [
 Route::get('/kontakt', [
   'uses' => 'Frontend\FrontendController@kontakt',
   'as' => 'frontend.kontakt'
+]);
+Route::get('/its_cms', [
+  'uses' => 'Frontend\FrontendController@cms',
+  'as' => 'frontend.cms'
 ]);

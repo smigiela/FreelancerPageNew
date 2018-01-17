@@ -1,6 +1,4 @@
 @extends('layouts.dashboard')
-@section('keywords') {{$post->keywords}} @endsection
-@section('meta_content') {{$post->meta_content}} @endsection
 @section('title') | Post - {{$post->title}} @endsection
 @section('content')
     <div class="backend-content">
