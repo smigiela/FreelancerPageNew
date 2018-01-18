@@ -17,7 +17,7 @@ class PortfoliosController extends Controller
      */
     public function index()
     {
-        $portfolios = Portfolio::paginate(5);
+        $portfolios = Portfolio::all();
         return view('admin.portfolios.index', compact('portfolios'));
     }
 
@@ -63,12 +63,12 @@ class PortfoliosController extends Controller
             Image::make($image)->save($location);
 
             $portfolio->image = $filename;
-        }     
-        
+        } 
+
         $portfolio->save();
 
         Session::flash('Success', 'Pomyślnie dodano portfolio');
-        return view('admin.portfolio.index');
+        return view('admin.portfolios.index');
 
     }
 

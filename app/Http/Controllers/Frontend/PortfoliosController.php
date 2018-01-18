@@ -11,7 +11,7 @@ class PortfoliosController extends Controller
 {
     public function index()
     {
-        $portfolios = Portfolio::paginate(5);
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->paginate(4);
         return view('pages.portfolio.index', compact('portfolios'));
     }
     public function show($slug)

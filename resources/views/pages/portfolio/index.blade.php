@@ -19,13 +19,13 @@
       <div class="columns">
         @foreach($portfolios as $portfolio)
         <div class="column">
-          <div class="portfolio-item-home">             
-             <figure>
+          <div class="portfolio-item-home has-text-centered">             
+             <figure class="larva-links">
                 <a href="{{url('portfolio/' . $portfolio->slug)}}">
                     <img src="{{asset('/img/portfolio/' . $portfolio->image)}}" alt="{{$portfolio->alt_tag}}">
                  </a>
            		<figcaption>
-                 <a href="{{url('portfolio/' . $portfolio->slug)}}"><h3>{{$portfolio->title}}</h3></a>{!!str_limit(strip_tags($portfolio->body), $limit=80)!!}
+                 <a href="{{url('portfolio/' . $portfolio->slug)}}"><h3>{{$portfolio->title}}</h3></a>
                </figcaption>
            	</figure>
           </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="columns"><!--pagination-->
           <div class="column is-4 is-offset-3 paginate">
-            {{ $portfolios->links("pagination::bootstrap-4") }}
+            {{ $portfolios->links("pagination::bulma") }}
           </div>
           </div>
     </div>

@@ -99,11 +99,20 @@ video.fillWidth {
 }
 
 #intro-hero{
-  margin-top: 150px;
+  margin-top: 100px;
   h3{
+    margin: 0;
     color: $lightgray;
   }
+  h2{
+    color: $lightgray;
+    font-style: italic;
+    @media screen and (max-width: 729px) {
+      display: none;
+    }
+  }
   h1{
+    margin-top: 0;
     font-size: 4rem;
     color: $primary;
     @media screen and (max-width: 480px) {
@@ -160,7 +169,6 @@ video.fillWidth {
   }
 }
 
-
 /************************************
 *************************************
 *************about ******* **********
@@ -187,6 +195,44 @@ video.fillWidth {
   ul{
     list-style-type: circle;
   }
+}
+.blogItemHome{
+  max-width: 300px;
+  max-height: 200px;
+  position: relative;
+  padding: 0;
+  margin-right: 10px;
+  text-align: center;
+    .imageBlogHome{
+      cursor: pointer;
+      position: relative;
+      display: block;
+      }
+      .textBlogHome{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.8);
+        opacity: 0;
+        -webkit-transition: opacity 0.6s;
+        transition: opacity 0.6s;    
+        padding-top: 50px;
+        p{
+          color: white;
+          display: inline-table;
+           vertical-align:middle;
+           line-height:100%;
+        }
+        &:hover{
+          opacity: 1; 
+        }
+
+    }
 }
 
 /************************************
@@ -264,8 +310,6 @@ video.fillWidth {
 
 }
 
-
-
 /************************************
 *************************************
 *************contact*****************
@@ -312,15 +356,7 @@ video.fillWidth {
     }
   }
 }
-/************************************
-*************************************
-************* paginacja**************
-*************************************
-***********************************/
-.paginate{
-  margin-top: 30px;
-  background-color: $lightgray;
-}
+
 /************************************
 *************************************
 ************* text on blog asside****

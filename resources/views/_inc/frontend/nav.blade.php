@@ -17,7 +17,7 @@
         <a class="navbar-item" href="{{route('frontend.index')}}">
           Główna
         </a>
-        <a class="navbar-item" href="{{route('frontend.oFirmie')}}">
+        <a class="navbar-item" href="{{route('frontend.omnie')}}">
           O mnie
         </a>
         <a class="navbar-item" href="{{route('frontend.oferta')}}">

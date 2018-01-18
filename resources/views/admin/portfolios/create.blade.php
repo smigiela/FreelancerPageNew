@@ -35,7 +35,7 @@
                         {!! Form::textarea('meta_content', null, ['class' => 'textarea form-control', 'rows' => 3]) !!}
                     </div>
                     <div class="form-group">
-                        <label for="image">Zdjęcie wyróżniające:</label><br>
+                        <label for="image">Zdjęcie do case study</label><br>
                         {!! Form::file('image', ['class' => 'form-control file']) !!}
                         {!! Form::label('alt_tag', 'seotag:') !!}
                         {!! Form::text('alt_tag', null, array('class' => 'form-control')) !!}
@@ -52,7 +52,7 @@
 <script>
     tinymce.init({
         selector: 'textarea.tinymce', 
-        plugins: 'image imagetools code link',
+        plugins: 'image imagetools code link hr',
         height: '231'
     });
           

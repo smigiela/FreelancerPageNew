@@ -26533,14 +26533,27 @@ video.fillWidth {
 }
 
 #intro-hero {
-  margin-top: 150px;
+  margin-top: 100px;
 }
 
 #intro-hero h3 {
-  color: #EFEFEF;
+  margin: 0;
+  color: #dadada;
+}
+
+#intro-hero h2 {
+  color: #dadada;
+  font-style: italic;
+}
+
+@media screen and (max-width: 729px) {
+  #intro-hero h2 {
+    display: none;
+  }
 }
 
 #intro-hero h1 {
+  margin-top: 0;
   font-size: 4rem;
   color: #00d1b2;
 }
@@ -26612,7 +26625,7 @@ video.fillWidth {
 ***********************************/
 
 #offer {
-  background-color: #EFEFEF;
+  background-color: #dadada;
 }
 
 #offer .icons-ofer {
@@ -26641,11 +26654,53 @@ video.fillWidth {
 ***********************************/
 
 #blog-posts-home {
-  background-color: #EFEFEF;
+  background-color: #dadada;
 }
 
 #blog-posts-home ul {
   list-style-type: circle;
+}
+
+.blogItemHome {
+  max-width: 300px;
+  max-height: 200px;
+  position: relative;
+  padding: 0;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.blogItemHome .imageBlogHome {
+  cursor: pointer;
+  position: relative;
+  display: block;
+}
+
+.blogItemHome .textBlogHome {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  padding-top: 50px;
+}
+
+.blogItemHome .textBlogHome p {
+  color: white;
+  display: inline-table;
+  vertical-align: middle;
+  line-height: 100%;
+}
+
+.blogItemHome .textBlogHome:hover {
+  opacity: 1;
 }
 
 /************************************
@@ -26782,17 +26837,6 @@ video.fillWidth {
   color: #00d1b2;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
-}
-
-/************************************
-*************************************
-************* paginacja**************
-*************************************
-***********************************/
-
-.paginate {
-  margin-top: 30px;
-  background-color: #EFEFEF;
 }
 
 /************************************

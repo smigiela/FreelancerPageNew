@@ -29,15 +29,15 @@
     <div class="column is-4">
       <img class="wow slideInLeft" src="/img/icons/rwd.png" alt="cms" data-wow-duration="1s">
     </div>
-    <div class="column is-8 wow fadeIn" data-wow-duration="4s">
+    <div class="column subpage-text is-8 wow fadeIn" data-wow-duration="4s">
       <h2 class="title">Responsywny design</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Biorąc pod uwagę, że w dzisiejszych czasach większość stron jest wyświetlanych na urządzeniach mobilnych, których udział w rynku jest coraz większy, rozumiem iż Twoja strona musi działać doskonale przede wszystkim na nich, dlatego też projekt strony wykonuję w myśl zasady mobile-first. </p>
     </div>
   </div><!--end of columns-->
   <div class="columns">
-    <div class="column is-8 m-t-30 wow fadeIn" data-wow-duration="4s">
+    <div class="column subpage-text is-8 m-t-30 wow fadeIn" data-wow-duration="4s">
       <h2 class="title">Zoptymalizowany kod</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Większość stron, które wykonują laicy pięknie wyglądają, mają duzo animacji, kolorowych błyskotek. Jednak co z tego skoro robot google, pomimo tego, że ocenia strone pod wględem wizualnym, ocenia głównie kod i pod kątem jego optymalizacji między innymi ocenia stronę. Co z tego, że strona Tobie się podoba, jak przez brak optymalizacji kodu może okazać się nie do znalezienia nawet lokalnie? Jestem pasjonatem i wkładam serce w każdy projekt. Mój cms ma gotowy moduł optymalizujący seo, dzięki któremu każda podstrona, każdy artykuł ma swój zestaw znaczników, które pomogą pozycjonować całą witrynę. </p>
     </div>
     <div class="column is-4">
       <img class="wow slideInRight" data-wow-duration="1s" src="/img/icons/seo.png" alt="seo">
@@ -50,4 +50,16 @@
       <h2 class="title">Każdy napisany kod jest mojego autorstwa</h2>
     </div>
   </section><!--end of subpage-hero-->
+  <div class="container">
+  <div class="columns m-t-30">
+    <div class="column is-4">
+      <img class="wow slideInLeft" src="/img/icons/its_cms.png" alt="cms" data-wow-duration="1s">
+    </div>
+    <div class="column subpage-text is-8 wow fadeIn" data-wow-duration="4s">
+      <h2 class="title">Autorski CMS</h2>
+      <p>Każda strona wykonana przeze mnie - jeśli nie życzysz sobie innej opcji - jest oparta o mój autorski system zarządzania treścią. Tobie daje to wygodę korzystania - system jest intuicyjny i dopasowany do Twoich potrzeb. Nie będzie zawierał funkcji których nie potrzebujesz. Bezpieczeństwo - kod systemu znany tylko autorowi, dzięki czemu trudniej go złamać niż popularne systemu takie jak Wordpress.</p>
+      <p>Dopasowany do wszystkich urządzeń dzięki czemu wystarczy Ci dostęp do internetu na byle jakim urządzeniu aby zarządzać swoją stroną.</p>
+    </div>
+  </div><!--end of columns-->
+</div><!--en of container-->
  

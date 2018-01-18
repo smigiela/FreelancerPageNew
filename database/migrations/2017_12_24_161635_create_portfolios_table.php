@@ -18,8 +18,8 @@ class CreatePortfoliosTable extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('link');
-            $table->string('image');
-            $table->string('alt_tag');
+            $table->string('image')->null;
+            $table->string('alt_tag')->null;
             $table->text('body');
             $table->string('meta_content')
                 ->nullable();

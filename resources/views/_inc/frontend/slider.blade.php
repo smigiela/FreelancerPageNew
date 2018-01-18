@@ -6,8 +6,9 @@
       </video>
         @include('_inc.frontend.nav')
       <div id="intro-hero" class="hero has-text-centered"><!--header intro-->
-        <h3 class="subititle">Agencja interaktywna</h3>
-        <h1 class="title">IT-SOLUTIONS</h1>
+        <h3 class="wow slideInRight" data-wow-duration="2s" data-wow-delay="2s">Daniel Śmigiela - freelancer</h3>
+        <h1 class="wow title fadeIn" data-wow-duration="2s" data-wow-delay="1s">IT-SOLUTIONS</h1>
+        <h2 class="wow slideInLeft" data-wow-duration="2s" data-wow-delay="3s">Profesjonalne strony www, aplikacje internetowe oraz szkolenia i porady. <br>Zapoznaj sie z moją ofertą oraz zajrzyj na blog!</h2>
       </div><!--end header intro-->
 
       <div class="intro-icons"><!--icons on bottom-->

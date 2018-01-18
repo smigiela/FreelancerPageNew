@@ -4,50 +4,35 @@
 
  <div class="columns">
    <div class="column is-10 blog-home-content">
-     <div class="columns"><!--start blog row-->
+     <div class="columns m-t-25"><!--start blog row-->
       @foreach($posts as $post)
-       <div class="column is-3">
-         <div class="card">
-          <div class="card-image">
-            <figure class="image is-16by9">
-              <img src="{{asset('/img/blog/' . $post->image)}}" alt="{{$post->alt_tag}}">
-            </figure>
+      <div class="column blogItemHome">
+        <div class="imageBlogHome">
+          <img src="{{asset('/img/blog/' . $post->image)}}" alt="{{$post->alt_tag}}">
+          <div class="textBlogHome is-mobile">
+           <p>{{$post->title}}</p>
+          <hr>
+          <p>Kategoria: <span style="font-style:italic">{{$post->Category->name}}</span></p>
           </div>
-          <div class="card-content">
-            <div class="content">
-              <h4 class="modal-card-title">
-                {{$post->title}}  
-              </h4>
-              {!!str_limit(strip_tags($post->body), $limit=60)!!}
-              <hr>
-              <small class="is-size-7">
-                Opublikowano:
-                {{date('d-m-Y', strtotime($post->created_at))}}<br>
-                Kategoria: {{$post->Category->name}}<br>
-                Tagi: 
-                @foreach($post->Tag as $tag)
-                  <span class="tag">{{$tag->name}}</span>
-                @endforeach
-              </small>
-            </div>
-          </div>
-        </div>
-       </div>
-       @endforeach
+        </div>        
+      </div>
+      @endforeach
      </div><!--end of blog row-->
    </div>
    <div class="column is-2"><!--aside panel-->
      <h4 class="subtitle">Kategorie:</h4>
-      <ul>
+      <ul class="larva-links" style="list-style-type:none;">
         @foreach ($categories as $category)
-            <li>{{$category->name}}</li>
+            <li><a href="{{route('blog.category', $category->id)}}">{{$category->name}}</a></li>
         @endforeach
       </ul>
     <h4 class="subtitle m-t-45">Tagi:</h4>
       <div class="tags">
-        @foreach($tags as $tag)
-          <span class="tag">{{$tag->name}}</span>
-        @endforeach
+        @foreach ($tags as $tag)
+            <a href="{{route('blog.tag', $tag->id)}}">
+              <span style="margin: 0 2px;" class="tag">{{$tag->name}} </span>
+            </a>
+            @endforeach
       </div>
    </div><!--end of aside panel-->
  </div>

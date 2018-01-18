@@ -1,8 +1,8 @@
 @extends('layouts.home')
 
 @section('keywords') Programowanie, tanie strony www opole, firmowa strona, IT Solutions, Daniel Śmigiela, opole @endsection
-@section('meta_content') IT Solutions - Strona freelancera-programisty - Daniel Śmigiela | O firmie @endsection
-@section('title') | O firmie @endsection
+@section('meta_content') IT Solutions - Strona freelancera-programisty - Daniel Śmigiela | O mnie @endsection
+@section('title') | O mnie @endsection
 
 @section('content')
   <section id="about" class="wow slideInLeft">
@@ -53,20 +53,37 @@
       </div>
     </section><!--end of subpage-hero-->
     <div class="container m-t-30 m-b-30">
-     <div class="columns">
-       <div class="column is-4">
-         <img src="/img/icons/social-icons.png" alt="">
-       </div>
-       <div class="column is-8">
-         <div class="subpage-text">
-           <h2 class="subtitle">Poznaj moc socialmediów</h2>
-           <p>Bill Gates powiedział, że jeśli nie ma Twojego biznesu w internecie, to on nie istnieje. To fakt, jednak kluczową rolę odgrywają tu social-media. Skoro ludzie, szczególnie młodzi, choć coraz częściej wiek nie ma tu znaczenia, spędzają mnóstwo czasu w social-mediach, to najszybciej do nich można dotrzeć właśnie tą drogą!</p><br />
-           <p>Dlatego właśnie oferuję połączenie zrobionej strony www lub aplikacji webowej z social-mediami! Profile, podlinkowania to silnik napędowy dla Twojego biznesu!</p>
-         </div>
-       </div>
-     </div><!--end of columns-->
-     <hr>
-     @include('_inc.frontend.portfolio-home')
+<div class="columns">
+  <div class="column">
+  <a href="#" class="pop">
+      <img src="/img/icons/certyfikaty/google.png" style="width: 400px; height: 264px;">
+  </a>
+  <a href="#" class="pop">
+    <img src="/img/icons/certyfikaty/e-business.png" style="width: 400px; height: 264px;">
+</a>
+  
+  <div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">              
+        <div class="modal-body">
+          <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+          <img src="" class="imagepreview" style="width: 100%;" >
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
    </div><!--end of container-->
   </section>
 @endsection
+@push('scripts')
+<script> //modal certyficat
+  $(function() {
+    $('.pop').on('click', function() {
+      $('.imagepreview').attr('src', $(this).find('img').attr('src'));
+      $('#imagemodal').modal('show');   
+    });		
+  });
+</script>
+@endpush

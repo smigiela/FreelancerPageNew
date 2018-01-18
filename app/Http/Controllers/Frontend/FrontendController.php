@@ -17,9 +17,9 @@ class FrontendController extends Controller
 
     public function index()
     {
-        $posts = Post::where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->paginate(4);
+        $posts = Post::where('status', 'PUBLISHED')->orderBy('created_at', 'desc')->paginate(3);
         $categories = Category::all();
-        $portfolios = Portfolio::paginate(4);
+        $portfolios = Portfolio::orderBy('created_at', 'desc')->paginate(4);
         $tags = Tag::all();
         
         return view('layouts.home', compact(
@@ -30,10 +30,10 @@ class FrontendController extends Controller
         ));
     }
 
-    public function oFirmie()
+    public function omnie()
     {
         $portfolios = Portfolio::paginate(4);
-        return view('pages.oFirmie', compact('portfolios'));
+        return view('pages.omnie', compact('portfolios'));
     }
     public function oferta()
     {

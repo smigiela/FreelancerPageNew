@@ -19,7 +19,7 @@ class CreatePostsTable extends Migration
             $table->string('slug')
                 ->unique();
             $table->string('image');
-            $table->string('alt_tag');
+            $table->string('alt_tag')->null;
             $table->integer('category_id')
                 ->unsigned()
                 ->nullable();

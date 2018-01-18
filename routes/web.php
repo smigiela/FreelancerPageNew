@@ -67,9 +67,9 @@ Route::group(['prefix' => 'portfolio'], function() {
 });
 
 //Pages
-Route::get('/oFirmie', [
-  'uses' => 'Frontend\FrontendController@oFirmie',
-  'as' => 'frontend.oFirmie'
+Route::get('/omnie', [
+  'uses' => 'Frontend\FrontendController@omnie',
+  'as' => 'frontend.omnie'
 ]);
 Route::get('/oferta', [
   'uses' => 'Frontend\FrontendController@oferta',

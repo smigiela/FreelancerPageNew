@@ -65,27 +65,39 @@
        <img src="/img/icons/hosting.png" alt="">
      </div>
    </div><!--end of columns-->
- </div><!--end of container-->
+ <div class="columns">
+  <div class="column is-4">
+    <img src="/img/icons/social-icons.png" alt="">
+  </div>
+  <div class="column is-8">
+    <div class="subpage-text">
+      <h2 class="subtitle">Poznaj moc socialmediów</h2>
+      <p>Bill Gates powiedział, że jeśli nie ma Twojego biznesu w internecie, to on nie istnieje. To fakt, jednak kluczową rolę odgrywają tu social-media. Skoro ludzie, szczególnie młodzi, choć coraz częściej wiek nie ma tu znaczenia, spędzają mnóstwo czasu w social-mediach, to najszybciej do nich można dotrzeć właśnie tą drogą!</p><br />
+      <p>Dlatego właśnie oferuję połączenie zrobionej strony www lub aplikacji webowej z social-mediami! Profile, podlinkowania to silnik napędowy dla Twojego biznesu!</p>
+    </div>
+  </div>
+</div><!--end of columns-->
+</div><!--end of container-->
  <section class="subpage-hero hero">
     <div class="hero-body container">
       <h4 class="subtitle">Inni mają ukryte opłaty? Abonmenty? Opłaty okresowe?</h4>
       <h2 class="title">U mnie zapłacisz tylko raz!</h2>
     </div>
  </section><!--end of subpage-hero-->
- <div class="container m-t-20 p-b-30">
+ <div class="container m-t-30 m-b-30">
   <div class="columns">
+    <div class="column is-4">
+      <img src="/img/icons/social-icons.png" alt="">
+    </div>
     <div class="column is-8">
       <div class="subpage-text">
-        <h2 class="subtitle">Czego finalnie możesz się spodziewać ?</h2>
-        <p>Otóż, zlecasz mi wykonanie strony/aplikacji. Otrzymujesz wstępny projekt graficzny oraz kosztorys. Jeśli akceptujesz - podpisujemy umowe B2B lub B2C - jak wolisz.</p>
-        <p>Po wykonaniu zlecenia otrzymujesz w pełni działąjącą stronę/aplikację, dostęp do panelu zarządzania stroną, dostęp do panelu hostingowego, dostęp do zarządzania domeną.</p>
-        <p>Wszelkie umowy zawarte z firmami hostingowymi, rejestratorami domen, profile społecznościowe, google firma, itd zostają zawarte na Twoje dane i przekazane Tobie po zakończeniu projektu.</p>
-        <p>Możesz pozostawić witrynę w moich rękach i uiszczać opłatę abonamentową(miesięczną lub roczną) w zamian za pełną administrację witryną.</p>
+        <h2 class="subtitle">Poznaj moc socialmediów</h2>
+        <p>Bill Gates powiedział, że jeśli nie ma Twojego biznesu w internecie, to on nie istnieje. To fakt, jednak kluczową rolę odgrywają tu social-media. Skoro ludzie, szczególnie młodzi, choć coraz częściej wiek nie ma tu znaczenia, spędzają mnóstwo czasu w social-mediach, to najszybciej do nich można dotrzeć właśnie tą drogą!</p><br />
+        <p>Dlatego właśnie oferuję połączenie zrobionej strony www lub aplikacji webowej z social-mediami! Profile, podlinkowania to silnik napędowy dla Twojego biznesu!</p>
       </div>
     </div>
-    <div class="column is-4">
-      <img src="/img/icons/finger.png" alt="">
-    </div>
-  </div>
- </div>
+  </div><!--end of columns-->
+  <hr>
+  @include('_inc.frontend.portfolio-home')
+</div><!--end of container-->
 @endsection

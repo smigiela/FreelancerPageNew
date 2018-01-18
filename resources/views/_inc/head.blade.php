@@ -44,7 +44,7 @@
             <meta property="og:type" content="article">
             <meta property="og:title" content="{{ config('app.name', 'Laravel') }} - Profesjonalne strony WWW">
             <meta property="og:description" content="IT Solutions - Strona freelancera-programisty - Daniel Śmigiela - Oferta | Blog | Portfolio | Tanie strony">
-            <meta property="og:image" content="{{asset('/img/settings/logo/png')}}">
+            <meta property="og:image" content="{{asset('/img/settings/logo.png')}}">
             <meta property="og:url" content="{{route('frontend.index')}}">
         @endif
         

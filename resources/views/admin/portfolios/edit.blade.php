@@ -52,7 +52,7 @@
 <script>
     tinymce.init({
         selector: 'textarea.tinymce', 
-        plugins: 'image imagetools code link',
+        plugins: 'image imagetools code link hr',
         height: '231'
     });
           
